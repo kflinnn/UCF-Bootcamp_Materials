@@ -1,3 +1,11 @@
+:root {
+  --white: #fff;
+  --navy: #13293d;
+  
+
+
+}
+
 body {
   font-size: 16px;
   display: flex;
@@ -19,8 +27,8 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
 }
 
 nav {
@@ -36,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 main {
@@ -49,14 +57,14 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: var(--black);
   color: #fff;
   margin-top: auto;
 }
 
 .products {
   flex: 1;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
