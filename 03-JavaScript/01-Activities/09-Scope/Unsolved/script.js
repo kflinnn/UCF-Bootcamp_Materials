@@ -41,9 +41,9 @@ sayTigers();
 sayBears();
 
 // TODO: The variable 'sing' should be declared once in the local scope.
-var sing = "Sing"; 
 
 function singAlong() {
+  var sing = "Sing"
   console.log(sing + ",");
   var singASong = function () {
     console.log(sing + " a Song.");
