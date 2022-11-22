@@ -14,15 +14,15 @@ var li2 = document.createElement("li");
 var li3 = document.createElement("li");
 var li4 = document.createElement("li");
 
-li1.textContent = "French Fries";
-li2.textContent = "Curry";
-li3.textContent = "Tacos";
-li4.textContent = "Pizza";
-
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
+
+li1.textContent = "French Fries";
+li2.textContent = "Curry";
+li3.textContent = "Tacos";
+li4.textContent = "Pizza";
 
 body.appendChild(h1El);
 body.appendChild(infoEl);

@@ -24,10 +24,5 @@ site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 var h4Tag = document.querySelectorAll("h4");
 
 for (var i = 0; i < h4Tag.length; i++) {
-    h4Tag[i].setAttribute("style", "color: blue; font-size: 30px; font-weight: bold;"); 
+    h4Tag[i].setAttribute("style", "color: blue; font-size: 30px; font-weight: bold; padding-left: 10px; margin: 0;"); 
     }
-
-var title = document.querySelector("title");
-
-title.setAttribute("style", "padding: 10px; margin: 0;");
-
