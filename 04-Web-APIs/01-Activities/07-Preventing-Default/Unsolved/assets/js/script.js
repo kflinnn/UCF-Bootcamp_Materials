@@ -16,8 +16,9 @@ function addTip(event) {
   var total = totalEl.value;
   var tipAmount = calculateTip(total, tipPercentage);
   var newTotal = calculateTotal(tipAmount, total);
+  event.preventDefault();
   document.querySelector("#tip-amount").textContent = tipAmount;
   document.querySelector("#new-total").textContent = newTotal.toFixed(2);
-}
+  }
 
 submitEl.addEventListener("click", addTip);
