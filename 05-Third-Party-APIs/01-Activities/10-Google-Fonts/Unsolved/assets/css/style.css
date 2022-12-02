@@ -6,6 +6,11 @@
   --light: #fffaf7;
 }
 
+
+body {
+  font-family: 'Dancing Script', cursive;
+}
+
 ::selection {
   color: var(--brown);
   background-color: var(--light);
@@ -13,6 +18,7 @@
 
 .custom-navbar {
   background-color: var(--teal);
+  
 }
 
 .custom-navbar a {
