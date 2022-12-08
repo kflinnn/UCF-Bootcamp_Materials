@@ -31,6 +31,19 @@ formEl.on('submit', handleFormSubmit);
 
 // Add Autocomplete widget here
 //
+$(function (){
+  var availableTags = [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "Bootstrap",
+    "React"
+  ]
+})
 
 // Add Datepicker widget here
 //
+$( function (){
+  $("#datepicker").datepicker();
+})
