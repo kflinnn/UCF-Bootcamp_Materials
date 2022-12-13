@@ -4,7 +4,7 @@ var limitWarningEl = document.querySelector("#limit-warning");
 
 var getRepoName = function () {
 	// Where is this value coming from?
-	// TODO: Write your answer here
+	// TODO: Search
 	var queryString = document.location.search;
 	var repoName = queryString.split("=")[1];
 
@@ -14,7 +14,7 @@ var getRepoName = function () {
 		getRepoIssues(repoName);
 	} else {
 		// Under what condition will this run?
-		// TODO: Write your answer here
+		// TODO: if there isn't a repo name, if it's empty, it will replace it with the other html. 
 		document.location.replace("./index.html");
 	}
 };
@@ -28,7 +28,7 @@ var getRepoIssues = function (repo) {
 				displayIssues(data);
 
 				// What is this checking for? Under what condition will this be `true`?
-				// TODO: Write your answer here
+				// TODO: it's checking for a response, if there is a response. 
 				if (response.headers.get("Link")) {
 					displayWarning(repo);
 				}
@@ -41,7 +41,7 @@ var getRepoIssues = function (repo) {
 
 var displayIssues = function (issues) {
 	// Is there a difference between this and `!issues.length`?
-	// TODO: Write your answer here
+	// TODO: !issues.length indicates that there is no value, but below indicates if there is a value of zero, then the repo has no issues. 
 	if (issues.length === 0) {
 		issueContainerEl.textContent = "This repo has no open issues!";
 		return;
@@ -72,7 +72,7 @@ var displayIssues = function (issues) {
 };
 
 // What does this function do?
-// TODO: Write your answer here
+// TODO: displays the warning, then provides a link to click on 
 var displayWarning = function (repo) {
 	limitWarningEl.textContent = "To see more than 30 issues, visit ";
 
@@ -82,7 +82,7 @@ var displayWarning = function (repo) {
 	linkEl.setAttribute("target", "_blank");
 
 	// Where does this appear on the page?
-	// TODO: Write your answer here
+	// TODO: the <a> tag that was created in line 79
 	limitWarningEl.appendChild(linkEl);
 };
 

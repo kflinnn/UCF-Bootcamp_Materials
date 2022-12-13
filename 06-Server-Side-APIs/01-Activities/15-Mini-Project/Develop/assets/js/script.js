@@ -4,7 +4,8 @@ function handleSearchFormSubmit(event) {
 	event.preventDefault();
 
 	// TODO: get value from search input
-
+	var searchInput = document.getElementById("search-input").value; 
+	console.log(searchInput);
 	// TODO: get value from format selection
 
 	// TODO: conditional statement to catch user error

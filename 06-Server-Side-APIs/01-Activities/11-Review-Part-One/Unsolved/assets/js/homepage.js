@@ -21,11 +21,11 @@ var formSubmitHandler = function (event) {
 
 var buttonClickHandler = function (event) {
 	// What is `event.target` referencing?
-	// TODO: Write your answer here
+	// TODO: data-languages
 	var language = event.target.getAttribute("data-language");
 
 	// Why is this `if` block in place?
-	// TODO: Write your answer here
+	// TODO: To ensure the repos are sorted by the correct language
 	if (language) {
 		getFeaturedRepos(language);
 
@@ -76,7 +76,7 @@ var displayRepos = function (repos, searchTerm) {
 	if (repos.length === 0) {
 		repoContainerEl.textContent = "No repositories found.";
 		// What would happen if there was no `return;` here?
-		// TODO: Write your answer here
+		// TODO: It is the proper way to "quit" your function. It is how the function stops. 
 		return;
 	}
 
@@ -84,7 +84,7 @@ var displayRepos = function (repos, searchTerm) {
 
 	for (var i = 0; i < repos.length; i++) {
 		// What is the result of this string concatenation?
-		// TODO: Write your answer here
+		// TODO: The result will be <github-username>/<github-repository-name>
 		var repoName = repos[i].owner.login + "/" + repos[i].name;
 
 		var repoEl = document.createElement("div");

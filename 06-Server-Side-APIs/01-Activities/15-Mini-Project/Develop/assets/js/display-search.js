@@ -2,6 +2,11 @@ var resultTextEl = document.querySelector("#result-text");
 var resultContentEl = document.querySelector("#result-content");
 var searchFormEl = document.querySelector("#search-form");
 
+
+var locQueryUrl = "https://www.loc.gov/?fo=json";
+
+
+
 function getParams() {
 	// TODO: Get the search params out of the URL (i.e. `?q=london&format=photo`) and convert it to an array (i.e. ['?q=london', 'format=photo'])
 
