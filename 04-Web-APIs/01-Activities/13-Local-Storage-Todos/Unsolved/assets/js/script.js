@@ -5,7 +5,7 @@ var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = [];
 
-// TODO: What is the purpose of this function? Add Todos
+// TODO: What is the purpose of this function? get the todos from local storage
 function renderTodos() {
   // TODO: Describe the functionality of the following two lines of code.
   todoList.innerHTML = "";
