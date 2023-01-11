@@ -24,5 +24,5 @@ const additionSpread = (...array) => {
 // TODO: What do you expect to be logged in the console?
 console.log(additionSpread(1, 2, 3));
 
-// TODO: What do you expect to be logged in the console?
+// TODO: What do you expect to be logged in the console? 110
 console.log(additionSpread(1, 2, 3, 4, 100));
