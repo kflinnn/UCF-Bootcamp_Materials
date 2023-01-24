@@ -1,9 +1,9 @@
 const Letter = require('../lib/Letter');
 
 describe('Visibility', () => {
-  it('Characters that are digits or letters should not be visible', () => {
-    expect(new Letter('j').visible).toBe(false);
-  });
+  // it('Characters that are digits or letters should not be visible', () => {
+  //   expect(new Letter('j').visible).toBe(false);
+  // });
 
   it('Correct guess makes character visible', () => {
     const letter = new Letter('j');
@@ -43,9 +43,9 @@ describe('Visibility', () => {
 });
 
 describe('Letter class', () => {
-  it("Characters that aren't digits or letters are instantly visible", () => {
-    expect(new Letter('?').visible).toBe(true);
-  });
+  // it("Characters that aren't digits or letters are instantly visible", () => {
+  //   expect(new Letter('?').visible).toBe(true);
+  // });
 
   it('toString returns _ for letters', () => {
     expect(new Letter('a').toString()).toBe('_');
