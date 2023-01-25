@@ -10,6 +10,8 @@ const path = require('path');
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/')));
 
+app.use(express.static('public'));
+
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)
 );

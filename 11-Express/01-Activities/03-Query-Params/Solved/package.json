@@ -1,10 +1,9 @@
 {
-  "name": "18-stu-post-fetch",
+  "name": "06-stu-query-params",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "node": "^19.4.0"
+    "express": "^4.17.1"
   }
 }
