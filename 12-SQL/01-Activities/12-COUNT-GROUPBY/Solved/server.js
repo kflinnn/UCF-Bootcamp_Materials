@@ -15,7 +15,7 @@ const db = mysql.createConnection(
     host: 'localhost',
     // MySQL username,
     user: 'root',
-    // TODO: Add MySQL password
+    // MySQL password
     password: '',
     database: 'books_db'
   },
@@ -23,10 +23,9 @@ const db = mysql.createConnection(
 );
 
 // Query database
-
 let deletedRow = 2;
 
-db.query(`DELETE FROM favorite_books WHERE id = ?`, 2, (err, result) => {
+db.query(`DELETE FROM favorite_books WHERE id = ?`, deletedRow, (err, result) => {
   if (err) {
     console.log(err);
   }
