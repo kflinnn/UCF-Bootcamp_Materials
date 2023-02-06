@@ -5,5 +5,8 @@ USE books_db;
 
 CREATE TABLE favorite_books (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  book_name VARCHAR(30) NOT NULL
+  section INT NOT NULL,
+  book_name VARCHAR(30) NOT NULL,
+  in_stock BOOLEAN,
+  quantity INT NOT NULL
 );
