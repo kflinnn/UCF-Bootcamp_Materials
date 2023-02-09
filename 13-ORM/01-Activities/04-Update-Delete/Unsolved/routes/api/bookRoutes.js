@@ -9,8 +9,21 @@ router.put('/:book_id', (req, res) => {
 
 // TODO finish the DELETE route to DELETE a book in the database with a matching book_id
 router.delete('/:book_id', (req, res) => {
-  
-});
+    Book.deleteOne({_id: req.params.id}).then(
+      () => {
+        res.status(200).json({
+          message: 'Deleted!'
+        });
+      }
+    ).catch(
+      (error) => {
+        res.status(400).json({
+          error: error
+        });
+      }
+    );
+  });
+
 
 router.post('/seed', (req, res) => {
   Book.bulkCreate([
