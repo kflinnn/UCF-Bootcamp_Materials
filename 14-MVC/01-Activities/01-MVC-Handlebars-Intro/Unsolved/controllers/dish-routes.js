@@ -1,10 +1,10 @@
-// TODO: Add a comment indicating how this file fits into the MVC framework (is it a Model, a View, or a Controller?) and what it is responsible for handling.
+// TODO: Add a comment indicating how this file fits into the MVC framework (is it a Model, a View, or a Controller?) and what it is responsible for handling. this is a controller, it's responsible for the handoff. 
 
 const router = require('express').Router();
 
-// TODO: Add a comment describing the purpose of the get route
+// TODO: to return a file, specifically an index.html.
 router.get('/', async (req, res) => {
-//TODO: Add a comment describing the purpose of the render method
+//TODO: The index.html is rendered
   res.render('all');
 });
 
