@@ -59,21 +59,26 @@ app.delete('/find-one-delete/:genre', (req, res) => {
   });
 });
 
+// Finds the first document with the name with the value equal to 'Kids' and updates that name to the provided URL param value
 app.post('/find-one-update/:genre', (req, res) => {
-  // TODO: Write a route that will find the first instance of a document that contains a name with the value equal to 'Kids'
-  // Update that name with the value given from the URL param
-  // Return the updated document
+  // Uses findOneAndUpdate() method on model
   Genre.findOneAndUpdate(
-    {name: 'Kids'}, { name: req.params.genre }, (err, result) => {
+    // Finds first document with name of "Kids"
+    { name: 'Kids' },
+    // Replaces name with value in URL param
+    { name: req.params.genre },
+    // Sets to true so updated document is returned; Otherwise original document will be returned
+    { new: true },
+    (err, result) => {
       if (result) {
         res.status(200).json(result);
         console.log(`Updated: ${result}`);
       } else {
-        console.log('Uh oh, something went wrong');
-        res.status(500).json()
+        console.log('Uh Oh, something went wrong');
+        res.status(500).json({ message: 'something went wrong' });
       }
     }
-  )
+  );
 });
 
 db.once('open', () => {
