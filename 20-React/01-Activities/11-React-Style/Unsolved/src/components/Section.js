@@ -3,6 +3,10 @@ import React from 'react';
 import '../styles/Section.css';
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  color: 'white',
+  backgroundColor: 'purple',
+}
 
 function Section() {
   // TODO: Add a style attribute to `section`
