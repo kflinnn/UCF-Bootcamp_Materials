@@ -44,8 +44,8 @@ export const QUERY_SINGLE_THOUGHT = gql`
 `;
 
 export const QUERY_ME = gql`
-  query me {
-    me {
+  query me($meId: ID!) {
+    me(meId: $meId) {
       _id
       username
       email
